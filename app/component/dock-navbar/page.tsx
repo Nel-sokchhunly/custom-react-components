@@ -10,10 +10,6 @@ import {
 
 import DockNavbar from '../../../component/DockBar'
 
-const Divider = () => (
-  <div className='divider mx-2 h-10 w-1 rounded-full bg-gray-900'></div>
-)
-
 export default function Page() {
   return (
     <DockNavbar.Wrapper>
@@ -29,7 +25,7 @@ export default function Page() {
         icon={<BookOpenIcon className='stroke-inherit' />}
         title='Book'
       />
-      {/* <DockNavbar.Item
+      <DockNavbar.Item
         icon={<ArchiveBoxIcon className='stroke-inherit' />}
         title='Archive'
       />
@@ -37,7 +33,9 @@ export default function Page() {
         icon={<BellIcon className='stroke-inherit' />}
         title='Notification'
       />
+
       <Divider />
+
       <DockNavbar.Item
         icon={<UserIcon className='stroke-inherit' />}
         title='Profile'
@@ -45,8 +43,11 @@ export default function Page() {
       <DockNavbar.Item
         icon={<Cog8ToothIcon className='stroke-inherit' />}
         title='Setting'
-      /> */}
+      />
     </DockNavbar.Wrapper>
-    // <div>hi</div>
   )
 }
+
+const Divider = () => (
+  <div className='mx-0 h-10 w-1 rounded-full bg-gray-900'></div>
+)

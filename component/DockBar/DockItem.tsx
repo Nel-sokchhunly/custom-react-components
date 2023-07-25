@@ -11,7 +11,7 @@ const DockItem = ({
     <div
       key={title}
       className={`
-        dock-item w-full h-fit
+        dock-item w-fit h-fit
         relative cursor-pointer
         rounded-full 
         bg-gray-900 p-2
