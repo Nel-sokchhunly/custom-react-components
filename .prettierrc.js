@@ -3,7 +3,8 @@ const config = {
   trailingComma: 'es5',
   semi: false,
   singleQuote: true,
-  plugins: ['prettier-plugin-tailwindcss'],
+  jsxSingleQuote: true,
+  plugins: [],
 }
 
 module.exports = config
