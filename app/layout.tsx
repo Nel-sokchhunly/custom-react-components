@@ -1,5 +1,12 @@
 import '../styles/globals.css'
 
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+})
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
@@ -8,7 +15,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
       </head>
-      <body>
+      <body className={poppins.className}>
         <div
           className='
             flex h-screen

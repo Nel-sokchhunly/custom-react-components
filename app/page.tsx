@@ -10,12 +10,12 @@ export default function Home() {
       
       '
     >
-      <h1>Components</h1>
+      <h1>Open-source Components</h1>
 
-      <div className='flex gap-4'>
+      <div className='flex justify-center gap-4'>
         <ComponentLink
           href='/dock-navbar'
-          title='Dock'
+          title='Dock Bar'
           icon={<Bars3Icon className='h-6 w-6' />}
         />
       </div>
