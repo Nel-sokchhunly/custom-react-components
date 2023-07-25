@@ -8,7 +8,7 @@ import {
   HomeIcon,
 } from '@heroicons/react/24/outline'
 
-import DockNavbar from '../../../component/DockBar'
+import DockNavbar from '../../../components/DockBar'
 
 export default function Page() {
   return (
@@ -34,7 +34,7 @@ export default function Page() {
         title='Notification'
       />
 
-      <Divider />
+      <DockNavbar.Divider />
 
       <DockNavbar.Item
         icon={<UserIcon className='stroke-inherit' />}
@@ -47,7 +47,3 @@ export default function Page() {
     </DockNavbar.Wrapper>
   )
 }
-
-const Divider = () => (
-  <div className='mx-0 h-10 w-1 rounded-full bg-gray-900'></div>
-)

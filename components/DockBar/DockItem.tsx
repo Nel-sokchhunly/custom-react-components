@@ -11,12 +11,10 @@ const DockItem = ({
     <div
       key={title}
       className={`
-        dock-item w-fit h-fit
-        relative cursor-pointer
+        dock-item group relative cursor-pointer
         rounded-full 
         bg-gray-900 p-2
-        flex items-center justify-center
-        group 
+        flex items-center justify-center  
       `}
       onMouseEnter={(e) => {
         // add class to previous sibling
@@ -43,6 +41,18 @@ const DockItem = ({
       }}
     >
       <div className='h-8 w-8 stroke-white'>{icon}</div>
+
+      {/* tooltip */}
+      <span
+        className='
+          text-gray-900
+          hidden group-hover:block absolute bottom-full
+          transition-all duration-300
+          text-sm 
+        '
+      >
+        {title}
+      </span>
     </div>
   )
 }

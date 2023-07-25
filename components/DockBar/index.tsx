@@ -5,6 +5,10 @@ import DockWrapper from './DockWrapper'
 const Wrapper = DockWrapper
 const Item = DockItem
 
-const DockNavbar = { Wrapper, Item }
+const Divider = () => (
+  <div className='mx-0 h-10 w-1 rounded-full bg-gray-900'></div>
+)
+
+const DockNavbar = { Wrapper, Item, Divider }
 
 export default DockNavbar
