@@ -7,5 +7,17 @@ module.exports = {
   theme: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwind-heropatterns')({
+      variants: [],
+      patterns: [],
+      colors: {
+        default: '#9C92AC'
+      },
+      opacity: {
+        default: 0.4
+      }
+    })
+  ]
 };
