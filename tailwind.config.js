@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}'
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
@@ -13,11 +10,11 @@ module.exports = {
       variants: [],
       patterns: [],
       colors: {
-        default: '#9C92AC'
+        default: '#9C92AC',
       },
       opacity: {
-        default: 0.4
-      }
-    })
-  ]
-};
+        default: 0.4,
+      },
+    }),
+  ],
+}
