@@ -18,10 +18,10 @@
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.64.1",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
